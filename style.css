@@ -1,0 +1,324 @@
+:root {
+    --primary-color: #ff69b4;
+    --secondary-color: #000000;
+    --text-light: #ffffff;
+    --text-dark: #213547;
+    --transition: all 0.3s ease;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  }
+  
+  body {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    line-height: 1.6;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 1rem 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    transition: var(--transition);
+  }
+  
+  nav a:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+  }
+  
+  /* Packages Section */
+  .packages {
+    padding: 5rem 1rem;
+    background-color: var(--secondary-color);
+  }
+  
+  .packages h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+  }
+  
+  .package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .package-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    border: 1px solid rgba(255, 105, 180, 0.1);
+  }
+  
+  .package-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+  }
+  
+  .package-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+  }
+  
+  .package-card ul {
+    list-style: none;
+    margin-bottom: 2rem;
+  }
+  
+  .package-card li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .package-card .fa-check {
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+  }
+  
+  .featured {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+  }
+  
+  .featured-label {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background: var(--primary-color);
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  /* Contact Section */
+  .contact {
+    padding: 5rem 1rem;
+    background-color: rgba(255, 105, 180, 0.1);
+  }
+  
+  .contact h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 3rem;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid rgba(255, 105, 180, 0.3);
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.2);
+    color: var(--text-light);
+  }
+  
+  .contact-form textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: var(--transition);
+  }
+  
+  button:hover {
+    background-color: #ff1493;
+    transform: translateY(-2px);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 3rem 1rem 1rem;
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .footer-section h4 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-links a {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    transition: var(--transition);
+  }
+  
+  .social-links a:hover {
+    color: var(--primary-color);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-light);
+  }
+  
+  .close-btn:hover {
+    color: var(--primary-color);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+    
+    nav {
+      padding: 1rem;
+    }
+    
+    nav ul {
+      gap: 1rem;
+    }
+    
+    .package-card {
+      margin: 0 1rem;
+    }
+    
+    .featured {
+      transform: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul {
+      display: none;
+    }
+    
+    .hero h1 {
+      font-size: 1.5rem;
+    }
+    
+    .package-container {
+      grid-template-columns: 1fr;
+    }
+  }

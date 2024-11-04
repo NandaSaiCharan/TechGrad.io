@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Services</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">TechGrad</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#packages">Packages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <h1>Professional Portfolio Services</h1>
+        <p>Transform your career with our expert portfolio and resume solutions</p>
+    </section>
+
+    <section id="packages" class="packages">
+        <h2>Our Packages</h2>
+        <div class="package-container">
+            <div class="package-card">
+                <h3>Basic Package</h3>
+                <div class="price">₹500</div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Basic Portfolio</li>
+                    <li><i class="fas fa-check"></i>Basic Resume</li>
+                </ul>
+                <button class="order-btn" data-package="basic">Order Now</button>
+            </div>
+
+            <div class="package-card featured">
+                <span class="featured-label">Most Popular</span>
+                <h3>Pro Package</h3>
+                <div class="price">₹1000</div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Intermediate Portfolio</li>
+                    <li><i class="fas fa-check"></i>Professional Resume</li>
+                    <li><i class="fas fa-check"></i>1 Web Development Project</li>
+                </ul>
+                <button class="order-btn" data-package="pro">Order Now</button>
+            </div>
+
+            <div class="package-card">
+                <h3>Super Pro Package</h3>
+                <div class="price">₹1300</div>
+                <ul>
+                    <li><i class="fas fa-check"></i>Professional Portfolio</li>
+                    <li><i class="fas fa-check"></i>Professional Resume</li>
+                    <li><i class="fas fa-check"></i>2 Web Development Projects</li>
+                </ul>
+                <button class="order-btn" data-package="super-pro">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Get In Touch</h2>
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <select id="package-select" required>
+                <option value="">Select Package</option>
+                <option value="basic">Basic Package</option>
+                <option value="pro">Pro Package</option>
+                <option value="super-pro">Super Pro Package</option>
+            </select>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>Phone: +91 8919925429</p>
+                <p>Email: nanda.sai.charan.999@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/nanda_charan__/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/nandasaicharan" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/nanda-sai-charan-10564032b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Portfolio Pro. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3>Thank You!</h3>
+            <p>Your message has been sent successfully. We'll get back to you soon.</p>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
